@@ -4,9 +4,6 @@
 //
 //  Created by Eric Tang on 2023/6/7.
 //
-
-import Foundation
-
 /**
  Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
@@ -33,6 +30,8 @@ import Foundation
  1 <= s.length <= 104
  s consists of parentheses only '()[]{}'.
  */
+
+import Foundation
 
 class Solution {
     func isValid(_ s: String) -> Bool {
