@@ -1,6 +1,0 @@
-# .editorconfig file for a Swift project
-
-[*]
-indent_style = space
-indent_size = 2
-
