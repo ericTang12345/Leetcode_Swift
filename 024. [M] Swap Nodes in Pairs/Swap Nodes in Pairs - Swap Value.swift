@@ -34,38 +34,6 @@ public class ListNode {
     public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
 }
 
-extension ListNode {
-    func show() {
-        var vals: [Int] = []
-        var currNode: ListNode? = self
-        while currNode?.next != nil || currNode?.val != nil {
-            if let val = currNode?.val {
-                vals.append(val)
-            }
-            currNode = currNode?.next
-        }
-        if vals.isEmpty {
-            print("[]")
-        } else {
-            print(vals)
-        }
-    }
-    
-    static func createBy(array: [Int]) -> ListNode? {
-        guard !array.isEmpty else {
-            return nil
-        }
-        var head: ListNode? = ListNode(array[0])
-        var current = head
-        for i in 1..<array.count {
-            let newNode = ListNode(array[i])
-            current?.next = newNode
-            current = newNode
-        }
-        return head
-    }
-}
-
 class Solution {
     func swapPairs(_ head: ListNode?) -> ListNode? {
         guard let head = head else {
